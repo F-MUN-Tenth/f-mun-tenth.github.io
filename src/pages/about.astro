@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MemberCard from '../components/MemberCard.astro';
+import InfoCardHeader from '../components/InfoCardHeader.astro';
+import mike from '../content/mike.jpg'
+import russell from '../content/russell.jpg'
+import ben from '../content/ben.jpg'
+import jacob from '../content/jacob.jpg'
+import kate from '../content/kate.jpg'
+import alex from '../content/alex.jpg'
+import nick from '../content/nick.jpg'
+import matthew from '../content/matthew.jpg'
+import sam from '../content/sam.jpg'
+---
+<Layout title="fMUNtenth">
+	<main>
+		<div class="relative w-full">
+			<div class="grid h-screen place-items-center">
+				<div class="px-5 pb-20">
+					<InfoCardHeader subject="About the Competition">
+						F1Tenth is a competition hosted at various robotics conferences throughout the world, such as IROS or IFAC. Teams compete to see who can write the best driving algorithm for a one-tenth scale racing vehicle. The mission is to foster interest, excitement, and critical thinking about the increasingly ubiquitous field of autonomous systems, and to encourage university students to explore a relatively new field of research.<br/>
+						<br/>
+						F1Tenth competition consists of two main categories: a closed and an open competition. The closed competition restricts what hardware can be used for the car so that teams focus primarily on their software solution. In the open competition, teams have more flexibility in terms of what hardware, sensors, and motors they can use.
+					</InfoCardHeader>
+					<div class="grid grid-cols-2 gap-4 max-w-4xl">
+						<MemberCard name="Michael Mallay" desc="" photoPath={mike}>
+							
+						</MemberCard>
+						<MemberCard name="Russel Corbett" desc="" photoPath={russell}>
+							
+						</MemberCard>
+						<MemberCard name="Ben Thomas" desc="" photoPath={ben}>
+							
+						</MemberCard>
+						<MemberCard name="Jacob Gillis" desc="" photoPath={jacob}>
+							
+						</MemberCard>
+						<MemberCard name="Kate Williams" desc="" photoPath={kate}>
+							
+						</MemberCard>
+						<MemberCard name="Alex Bruneau" desc="" photoPath={alex}>
+							
+						</MemberCard>
+						<MemberCard name="Nick Philpott" desc="" photoPath={nick}>
+							
+						</MemberCard>
+						<MemberCard name="Matthew Jones" desc="" photoPath={matthew}>
+							
+						</MemberCard>
+						<MemberCard name="Sam Sheppard" desc="" photoPath={sam}>
+							
+						</MemberCard>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>

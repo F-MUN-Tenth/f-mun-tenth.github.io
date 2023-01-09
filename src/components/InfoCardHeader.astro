@@ -1,0 +1,13 @@
+---
+const { subject } = Astro.props
+---
+
+<div class="block p-6 max-w-4xl w-full rounded-lg border bg-stone-600/50 border-gray-700 shadow-md">
+	<h5 class="mb-2 text-2xl font-bold tracking-tight text-white ">{subject}</h5>
+	<div class="font-normal text-stone-200 drop-shadow-lg">
+		<slot />
+	</div>
+	{/* <div class="font-normal pt-3 text-gray-400 drop-shadow-lg">
+		2020/08/17
+	</div> */}
+</div>
