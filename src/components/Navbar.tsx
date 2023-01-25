@@ -13,7 +13,7 @@ export const Navbar = () => {
 				<a href="/" className='inline-flex items-center p-2 mr-4'>
 					<span className='text-2xl text-white font-code-font tracking-wide'>
 						
-							<img width='60px' height ='60px' src="transparent.png" />
+							<img width='60px' height ='60px' src="./transparent.png" />
 						
 					</span>
 				</a>
