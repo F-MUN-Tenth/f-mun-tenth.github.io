@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import InfoCard from '../components/InfoCard.astro';
 import InfoCardHeader from '../components/InfoCardHeader.astro';
+import MemberCard from '../components/MemberCard.astro';
+import mun from '../content/sponsors/MUN_Logo.png'
 ---
 
 <Layout title="Sponsors - FMUNTENTH">
@@ -14,6 +16,15 @@ import InfoCardHeader from '../components/InfoCardHeader.astro';
                 <InfoCardHeader subject="What do you get in return?">
 						As a FMUNTENTH sponsor, your brand or company will be represented at the international competition with your logo on our vehicle’s chassis. This promotion will allow your company to be represented on an international stage at the competition. Additionally, this sponsorship will show that your company supports students and their desire to learn!
 					</InfoCardHeader>
+                <InfoCardHeader subject="Platinum Sponsors"></InfoCardHeader>
+                <InfoCardHeader subject="Gold Sponsors"></InfoCardHeader>
+                <InfoCardHeader subject="Silver Sponsors"></InfoCardHeader>
+                <InfoCardHeader subject="Bronze Sponsors"></InfoCardHeader>
+                <div class="grid grid-cols-2 gap-4 max-w-4xl">
+						<MemberCard name="Memorial University of Newfoundland Engineering and Applied Science" linkedinURL="https://www.linkedin.com/showcase/faculty-of-engineering-and-applied-science-memorial-university/?originalSubdomain=ca" photoPath={mun}>
+							
+						</MemberCard>
+                </div>
 			</div>
 		</div>
 	</main>
