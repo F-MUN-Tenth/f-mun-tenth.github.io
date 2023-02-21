@@ -2,13 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import InfoCard from '../components/InfoCard.astro';
 import InfoCardHeader from '../components/InfoCardHeader.astro';
-import MemberCard from '../components/MemberCard.astro';
+import SponsorCard from '../components/SponsorCard.astro';
 import mun from '../content/sponsors/MUN_Logo.png'
+import marco from '../content/sponsors/marco.png'
+import fortis from '../content/sponsors/fortis.jpg'
+import pegnl from '../content/sponsors/pegnl.jpg'
 ---
 
 <Layout title="Sponsors - FMUNTENTH">
 	<main>
-		<div class="relative w-full h-[40rem]">
+		<div class="relative w-full h-full">
 			<div class="grid place-items-center">
 				<InfoCardHeader subject="Why are we seeking sponsorships?">
 						Every design competition comes with costs and we need your company's help to achieve our goal of attending the Cyber-Physical Systems and Internet-of-Things Week in 2023 from May 9th to 12th in San Antonio, Texas.
@@ -19,12 +22,23 @@ import mun from '../content/sponsors/MUN_Logo.png'
                 <InfoCardHeader subject="Platinum Sponsors"></InfoCardHeader>
                 <InfoCardHeader subject="Gold Sponsors"></InfoCardHeader>
                 <InfoCardHeader subject="Silver Sponsors"></InfoCardHeader>
+				<div class="grid grid-cols-2 gap-4 max-w-4xl">
+					<SponsorCard name="MARCO" linkedinURL="https://www.linkedin.com/company/marco-group-of-companies/" photoPath={marco}>
+						
+					</SponsorCard>
+				</div>
                 <InfoCardHeader subject="Bronze Sponsors"></InfoCardHeader>
-                <div class="grid grid-cols-2 gap-4 max-w-4xl">
-						<MemberCard name="Memorial University of Newfoundland Engineering and Applied Science" linkedinURL="https://www.linkedin.com/showcase/faculty-of-engineering-and-applied-science-memorial-university/?originalSubdomain=ca" photoPath={mun}>
+                <div class="grid grid-cols-2 gap-4 max-w-4xl pb-20">
+					<SponsorCard name="Memorial University of Newfoundland Engineering and Applied Science" linkedinURL="https://www.linkedin.com/showcase/faculty-of-engineering-and-applied-science-memorial-university/?originalSubdomain=ca" photoPath={mun}>
 							
-						</MemberCard>
-                </div>
+					</SponsorCard>
+					<SponsorCard name="PEGNL" linkedinURL="https://www.linkedin.com/company/pegnl/" photoPath={pegnl}>
+						
+					</SponsorCard>
+					<SponsorCard name="Fortis Inc." linkedinURL="https://www.linkedin.com/company/fortis-inc./" photoPath={fortis}>
+						
+					</SponsorCard>
+				</div>
 			</div>
 		</div>
 	</main>
