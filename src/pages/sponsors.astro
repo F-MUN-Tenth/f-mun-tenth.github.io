@@ -13,29 +13,40 @@ import pegnl from '../content/sponsors/pegnl.jpg'
 	<main>
 		<div class="relative w-full h-full">
 			<div class="grid place-items-center">
-				<InfoCardHeader subject="Why are we seeking sponsorships?">
-						Every design competition comes with costs and we need your company's help to achieve our goal of attending the Cyber-Physical Systems and Internet-of-Things Week in 2023 from May 9th to 12th in San Antonio, Texas.
-					</InfoCardHeader>
-                <InfoCardHeader subject="What do you get in return?">
-						As a FMUNTENTH sponsor, your brand or company will be represented at the international competition with your logo on our vehicle’s chassis. This promotion will allow your company to be represented on an international stage at the competition. Additionally, this sponsorship will show that your company supports students and their desire to learn!
-					</InfoCardHeader>
+				<div class='grid grid-cols-1 space-y-5 mb-5'>
+					<InfoCardHeader subject="Why are we seeking sponsorships?">
+							Every design competition comes with costs and we need your company's help to achieve our goal of attending the Cyber-Physical Systems and Internet-of-Things Week in 2023 from May 9th to 12th in San Antonio, Texas.
+						</InfoCardHeader>
+					<InfoCardHeader subject="What do you get in return?">
+							As a FMUNTENTH sponsor, your brand or company will be represented at the international competition with your logo on our vehicle’s chassis. This promotion will allow your company to be represented on an international stage at the competition. Additionally, this sponsorship will show that your company supports students and their desire to learn!
+						</InfoCardHeader>
+				</div>
                 <InfoCardHeader subject="Platinum Sponsors"></InfoCardHeader>
+				<div class="grid grid-cols-2 gap-4 max-w-4xl pb-10">
+					<SponsorCard name="Memorial University of Newfoundland Engineering and Applied Science" linkedinURL="https://www.linkedin.com/showcase/faculty-of-engineering-and-applied-science-memorial-university/?originalSubdomain=ca" photoPath={mun}>
+					
+					</SponsorCard>
+
+				</div>		
                 <InfoCardHeader subject="Gold Sponsors"></InfoCardHeader>
+				<div class="grid grid-cols-2 gap-4 max-w-4xl pb-10">
+
+				</div>
                 <InfoCardHeader subject="Silver Sponsors"></InfoCardHeader>
-				<div class="grid grid-cols-2 gap-4 max-w-4xl">
+				<div class="grid grid-cols-2 gap-4 max-w-4xl pb-10">
 					<SponsorCard name="MARCO" linkedinURL="https://www.linkedin.com/company/marco-group-of-companies/" photoPath={marco}>
 						
 					</SponsorCard>
 				</div>
                 <InfoCardHeader subject="Bronze Sponsors"></InfoCardHeader>
                 <div class="grid grid-cols-2 gap-4 max-w-4xl pb-20">
-					<SponsorCard name="Memorial University of Newfoundland Engineering and Applied Science" linkedinURL="https://www.linkedin.com/showcase/faculty-of-engineering-and-applied-science-memorial-university/?originalSubdomain=ca" photoPath={mun}>
-							
-					</SponsorCard>
 					<SponsorCard name="PEGNL" linkedinURL="https://www.linkedin.com/company/pegnl/" photoPath={pegnl}>
 						
 					</SponsorCard>
 					<SponsorCard name="Fortis Inc." linkedinURL="https://www.linkedin.com/company/fortis-inc./" photoPath={fortis}>
+						
+					</SponsorCard>
+					<SponsorCard name="Memorial University of Newfoundland Engineering and Applied Science" linkedinURL="https://www.linkedin.com/showcase/faculty-of-engineering-and-applied-science-memorial-university/?originalSubdomain=ca" photoPath={mun}>
 						
 					</SponsorCard>
 				</div>
